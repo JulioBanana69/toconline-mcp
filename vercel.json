@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/mcp.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/mcp",
@@ -20,9 +14,5 @@
       "src": "/(.*)",
       "dest": "/api/mcp.js"
     }
-  ],
-  "env": {
-    "TOCONLINE_CLIENT_ID": "@toconline_client_id",
-    "TOCONLINE_CLIENT_SECRET": "@toconline_client_secret"
-  }
+  ]
 }
